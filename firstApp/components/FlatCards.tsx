@@ -4,7 +4,7 @@ import React from 'react'
 const FlatCards = () => {
   return (
     <View>
-      <Text style={{color: 'black' }}>FlatCards</Text>
+      <Text style={{color: 'white', fontSize: 50 , margin: 8}}>FlatCards</Text>
       <View style={[styles.mainContainer]}>
        
       <View style={[styles.container, styles.redBox]}>

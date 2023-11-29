@@ -1,20 +1,24 @@
-import {  SafeAreaView, ScrollView } from 'react-native'
-import React from 'react'
-import FlatCards from './components/FlatCards'
-import ElevatedCards from './components/ElevatedCards'
+import { SafeAreaView, ScrollView } from 'react-native';
+import React from 'react';
+import FlatCards from './components/FlatCards';
+import ElevatedCards from './components/ElevatedCards';
+import ImageCard from './components/ImageCard';
 
 const App = () => {
-  
   return (
     <SafeAreaView>
-    <ScrollView>
-      <FlatCards />
-      <ElevatedCards/>
-    </ScrollView>
+      <ScrollView >
+        <FlatCards />
+        <ElevatedCards />
+        <ScrollView horizontal={true}>
+        <ImageCard/>
+        <ImageCard/>
+        <ImageCard/>
+        </ScrollView>
+     
+      </ScrollView>
     </SafeAreaView>
+  );
+};
 
-  )
-}
-
-export default App
-
+export default App;
